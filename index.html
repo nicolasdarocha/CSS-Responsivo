@@ -11,7 +11,7 @@
     
     <body>
         <div class="container">
-            <header class="statusBar">
+            <header>
                 <p class="clock">20:24</p>
                 <div class="icons">
                     <img class='wifi' src="img/s3.png" title="Wifi">
@@ -19,181 +19,202 @@
                     <img class='battery' src="img/s2.png" title="Bateria">
                 </div>
             </header>
-            <main>
-                <section>
-                    <div class="avatar">
-                        <img class="avatar_img" src="img/perfil-1.jpg" alt="avatar_img">
-                        <div class="avatar_text">
-                            <h3>Olá, Sônia</h3>
-                            <p>Mais 4 consultas hoje</p>
+            <section>
+                <div class="avatar">
+                    <img class="avatar_img" src="img/perfil-1.jpg" alt="avatar_img">
+                    <div class="avatar_text">
+                        <h3>Olá, Sônia</h3>
+                        <p>Mais 4 consultas hoje</p>
+                    </div>
+                </div>
+                <div class="daytitle">
+                    <h4>Hoje</h4>
+                </div>
+                <div class="today">
+                    <div class="coRe"><!--REMOTO-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-2.jpg" alt="pacient_avatar">
+                            <p class="nome">Luciana Dias</p>
+                            <img class="emVid" src="img/video.png" alt="video">
+                            <p class="tipoConsulta"> Consulta Remota</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cr2">
+                            <p class="horario">14:00 - 15:00 (1 hora)</p>
+                            <button class="vid">Ligar por vídeo</button>
+                            <button class="chat">Ligar por áudio</button>
                         </div>
                     </div>
-                    <div class="daytitle">
-                        <h4>Hoje</h4>
-                    </div>
-                    <div class="today">
-                        <div class="coRe"><!--REMOTO-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-2.jpg" alt="pacient_avatar">
-                                <p class="nome">Luciana Dias</p>
-                                <img class="emVid" src="img/video.png" alt="video">
-                                <p class="tipoConsulta"> Consulta Remota</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cr2">
-                                <p class="horario">14:00 - 15:00 (1 hora)</p>
-                                <button class="vid">Ligar por vídeo</button>
-                                <button class="chat">Ligar por áudio</button>
-                            </div>
+                    <div class="coRe"><!--LOCAL-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
+                            <p class="nome">Larissa Santana</p>
+                            <img class="emVid" src="img/local.png" alt="video">
+                            <p class="tipoConsulta"> Consulta no local</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
                         </div>
-                        <div class="coRe"><!--LOCAL-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
-                                <p class="nome">Larissa Santana</p>
-                                <img class="emVid" src="img/local.png" alt="video">
-                                <p class="tipoConsulta"> Consulta no local</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cl2">
-                                <p class="horario">16:00 - 17:00 (1 hora)</p>
-                                <button class="ende">Ver endereço</button>
-                            </div>
-                        </div>
-                        <div class="coRe"><!--REMOTO-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
-                                <p class="nome">Marcos Correia</p>
-                                <img class="emVid" src="img/video.png" alt="video">
-                                <p class="tipoConsulta"> Consulta Remota</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cr2">
-                                <p class="horario">17:20 - 18:00 (40 minutos)</p>
-                                <button class="vid">Ligar por vídeo</button>
-                                <button class="chat">Ligar por áudio</button>
-                            </div>
+                        <div class="cl2">
+                            <p class="horario">16:00 - 17:00 (1 hora)</p>
+                            <button class="ende">Ver endereço</button>
                         </div>
                     </div>
-                    <div class="daytitle">
-                        <h4>Amanhã</h4>
-                    </div>
-                    <div class="tomorrow">
-                        <div class="coRe"><!--LOCAL-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
-                                <p class="nome">Larissa Santana</p>
-                                <img class="emVid" src="img/local.png" alt="video">
-                                <p class="tipoConsulta"> Consulta no local</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cl2">
-                                <p class="horario">16:00 - 17:00 (1 hora)</p>
-                                <button class="ende">Ver endereço</button>
-                            </div>
+                    <div class="coRe"><!--REMOTO-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
+                            <p class="nome">Marcos Correia</p>
+                            <img class="emVid" src="img/video.png" alt="video">
+                            <p class="tipoConsulta"> Consulta Remota</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
                         </div>
-                        <div class="coRe"><!--REMOTO-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
-                                <p class="nome">Marcos Correia</p>
-                                <img class="emVid" src="img/video.png" alt="video">
-                                <p class="tipoConsulta"> Consulta Remota</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cr2">
-                                <p class="horario">17:20 - 18:00 (40 minutos)</p>
-                                <button class="vid">Ligar por vídeo</button>
-                                <button class="chat">Ligar por áudio</button>
-                            </div>
-                        </div>
-                        <div class="coRe"><!--REMOTO-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
-                                <p class="nome">Marcos Correia</p>
-                                <img class="emVid" src="img/video.png" alt="video">
-                                <p class="tipoConsulta"> Consulta Remota</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cr2">
-                                <p class="horario">17:20 - 18:00 (40 minutos)</p>
-                                <button class="vid">Ligar por vídeo</button>
-                                <button class="chat">Ligar por áudio</button>
-                            </div>
-                        </div>
-                        <div class="coRe"><!--LOCAL-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
-                                <p class="nome">Larissa Santana</p>
-                                <img class="emVid" src="img/local.png" alt="video">
-                                <p class="tipoConsulta"> Consulta no local</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cl2">
-                                <p class="horario">16:00 - 17:00 (1 hora)</p>
-                                <button class="ende">Ver endereço</button>
-                            </div>
+                        <div class="cr2">
+                            <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                            <button class="vid">Ligar por vídeo</button>
+                            <button class="chat">Ligar por áudio</button>
                         </div>
                     </div>
-                    <div class="daytitle">
-                        <h4>Quarta-Feira</h4>
-                    </div>
-                    <div class="wednes">
-                        <div class="coRe"><!--LOCAL-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
-                                <p class="nome">Larissa Santana</p>
-                                <img class="emVid" src="img/local.png" alt="video">
-                                <p class="tipoConsulta"> Consulta no local</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cl2">
-                                <p class="horario">16:00 - 17:00 (1 hora)</p>
-                                <button class="ende">Ver endereço</button>
-                            </div>
+                </div>
+                <div class="daytitle">
+                    <h4>Amanhã</h4>
+                </div>
+                <div class="tomorrow">
+                    <div class="coRe"><!--LOCAL-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
+                            <p class="nome">Larissa Santana</p>
+                            <img class="emVid" src="img/local.png" alt="video">
+                            <p class="tipoConsulta"> Consulta no local</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
                         </div>
-                        <div class="coRe"><!--REMOTO-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
-                                <p class="nome">Marcos Correia</p>
-                                <img class="emVid" src="img/video.png" alt="video">
-                                <p class="tipoConsulta"> Consulta Remota</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cr2">
-                                <p class="horario">17:20 - 18:00 (40 minutos)</p>
-                                <button class="vid">Ligar por vídeo</button>
-                                <button class="chat">Ligar por áudio</button>
-                            </div>
-                        </div>
-                        <div class="coRe"><!--REMOTO-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
-                                <p class="nome">Marcos Correia</p>
-                                <img class="emVid" src="img/video.png" alt="video">
-                                <p class="tipoConsulta"> Consulta Remota</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cr2">
-                                <p class="horario">17:20 - 18:00 (40 minutos)</p>
-                                <button class="vid">Ligar por vídeo</button>
-                                <button class="chat">Ligar por áudio</button>
-                            </div>
-                        </div>
-                        <div class="coRe"><!--LOCAL-->
-                            <div class="cr1">
-                                <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
-                                <p class="nome">Larissa Santana</p>
-                                <img class="emVid" src="img/local.png" alt="video">
-                                <p class="tipoConsulta"> Consulta no local</p>
-                                <img class="emChat" src="img/chat.png" alt="chat">
-                            </div>
-                            <div class="cl2">
-                                <p class="horario">16:00 - 17:00 (1 hora)</p>
-                                <button class="ende">Ver endereço</button>
-                            </div>
+                        <div class="cl2">
+                            <p class="horario">16:00 - 17:00 (1 hora)</p>
+                            <button class="ende">Ver endereço</button>
                         </div>
                     </div>
-                </section>
-            </main>
+                    <div class="coRe"><!--REMOTO-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
+                            <p class="nome">Marcos Correia</p>
+                            <img class="emVid" src="img/video.png" alt="video">
+                            <p class="tipoConsulta"> Consulta Remota</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cr2">
+                            <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                            <button class="vid">Ligar por vídeo</button>
+                            <button class="chat">Ligar por áudio</button>
+                        </div>
+                    </div>
+                    <div class="coRe"><!--REMOTO-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
+                            <p class="nome">Marcos Correia</p>
+                            <img class="emVid" src="img/video.png" alt="video">
+                            <p class="tipoConsulta"> Consulta Remota</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cr2">
+                            <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                            <button class="vid">Ligar por vídeo</button>
+                            <button class="chat">Ligar por áudio</button>
+                        </div>
+                    </div>
+                    <div class="coRe"><!--LOCAL-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
+                            <p class="nome">Larissa Santana</p>
+                            <img class="emVid" src="img/local.png" alt="video">
+                            <p class="tipoConsulta"> Consulta no local</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cl2">
+                            <p class="horario">16:00 - 17:00 (1 hora)</p>
+                            <button class="ende">Ver endereço</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="daytitle">
+                    <h4>Quarta-Feira</h4>
+                </div>
+                <div class="wednes">
+                    <div class="coRe"><!--LOCAL-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
+                            <p class="nome">Larissa Santana</p>
+                            <img class="emVid" src="img/local.png" alt="video">
+                            <p class="tipoConsulta"> Consulta no local</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cl2">
+                            <p class="horario">16:00 - 17:00 (1 hora)</p>
+                            <button class="ende">Ver endereço</button>
+                        </div>
+                    </div>
+                    <div class="coRe"><!--REMOTO-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
+                            <p class="nome">Marcos Correia</p>
+                            <img class="emVid" src="img/video.png" alt="video">
+                            <p class="tipoConsulta"> Consulta Remota</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cr2">
+                            <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                            <button class="vid">Ligar por vídeo</button>
+                            <button class="chat">Ligar por áudio</button>
+                        </div>
+                    </div>
+                    <div class="coRe"><!--REMOTO-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-4.jpg" alt="pacient_avatar">
+                            <p class="nome">Marcos Correia</p>
+                            <img class="emVid" src="img/video.png" alt="video">
+                            <p class="tipoConsulta"> Consulta Remota</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cr2">
+                            <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                            <button class="vid">Ligar por vídeo</button>
+                            <button class="chat">Ligar por áudio</button>
+                        </div>
+                    </div>
+                    <div class="coRe"><!--LOCAL-->
+                        <div class="cr1">
+                            <img class="av" src="img/perfil-3.jpg" alt="pacient_avatar">
+                            <p class="nome">Larissa Santana</p>
+                            <img class="emVid" src="img/local.png" alt="video">
+                            <p class="tipoConsulta"> Consulta no local</p>
+                            <img class="emChat" src="img/chat.png" alt="chat">
+                        </div>
+                        <div class="cl2">
+                            <p class="horario">16:00 - 17:00 (1 hora)</p>
+                            <button class="ende">Ver endereço</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <button class="cadastro">+</button>
+                <div class="rodape">
+                    <div class="itensFooter">
+                        <button class="barrai1">
+                            <img class="imgItem" src="img/m1.png" alt="">
+                            <p class="nomeItem">Consultas</p>
+                        </button>
+                        <button class="barrai2">
+                            <img class="imgItem" src="img/m2.png" alt="">
+                            <p class="nomeItem">Clientes</p>
+                        </button>
+                        <button class="barrai3">
+                            <img class="imgItem" src="img/m3.png" alt="">
+                            <p class="nomeItem">Relatórios</p>
+                        </button>
+                        <button class="barrai4">
+                            <img class="imgItem" src="img/m4.png" alt="">
+                            <p class="nomeItem">Menu</p>
+                        </button>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

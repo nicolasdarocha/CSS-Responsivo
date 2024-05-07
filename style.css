@@ -45,7 +45,7 @@
     height: 16px;
 }
 
-.avatar {
+.avatar { /*ESTILIZACAO AVATAR DO USUARIO*/
     width: 223px;
     height: 57px;
     margin: 32px auto 22px 16px;
@@ -71,98 +71,22 @@
     font-size: 14px;
     color: #A3A3A3;
 }
-h3 h4 {
-    color: #464646;
-}
 
-h3 {
+h3 {/*OLA, SONIA*/
+    color: #464646;
     font-size: 22px;
 }
 
-h4 {
+h4 {/*DIAS*/
+    color: #464646;
     font-size: 16px;
     padding: 8px 0 2px 16px;
-}
-
-.type { 
-    color: #A3A3A3;
-    
 }
 /*GERAL*/
 .today,.tomorrow, .wednes {/*TITULOS*/
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.consult_1 {
-    background-color: white;
-    width: 328px;
-    height: 170px;
-    margin: 0 1em;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-}
-/*SUBGERAIS*/
-.remote_1 {
-    margin: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.division {
-    background-color: #F6F6F6;
-    width: auto;
-    height: 1px;
-}
-
-.remote_2 {
-    width: 296px;
-    height: 75px;
-    margin: 9px 16px 16px 16px;
-}
-/*IMAGENS*/
-.pacient_avatar {
-    width: 32px;
-    height: 32px;
-    margin: 1em;
-    border-radius: 50%;
-}
-
-/* .chat {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-} */
-
-.ico_remote {
-    height: 16px;
-    width: 16px;
-    margin: 4px;
-}
-/*CONTINUANDO*/
-
-.type_consult {
-    width: 140px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.pacient_text {
-    display: flex;
-    flex-direction: column;
-    padding-right: 50px;
-    justify-content: center;
-}
-
-.pacient_text p {
-    font-size: 13px;
-}
-
-.remote {
-    font-size: 12px;
 }
 /* remoto divs geral depois a parte de cima e debaixo */
 .coRe {
@@ -231,8 +155,8 @@ h4 {
     font-size: 12px;
     font-weight:500;
 }
-
-.cr2 button {/*eh a mesma coisa pros dois buttons*/
+/* BUTTONS */
+.cr2 button {/*mesma coisa pros dois buttons*/
     position: absolute;
     width: 139px;
     height: 48px;

@@ -1,0 +1,177 @@
+body{
+    font-family: 'Montserrat';
+    background-color: #E5E5E5;
+}
+
+h2,h3,h4{
+    color: #464646;
+    font-weight: 700;
+}
+
+header{
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 22px;
+    padding-bottom: 1vh;
+}
+header p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.home-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+main {/*sections dos dias de consulta*/
+    display: grid;
+    
+}
+
+section {
+    display: grid;
+    padding: 1em;
+    gap: 16px;
+    /* gap eh entre items
+    margin eh margem por fora da borda
+    padding eh margem por dentro da borda */
+}
+
+.section-day {
+    padding: 0 16px;
+}
+
+.card {
+    min-width: 328px;
+    max-width: 360px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1,.card2 {
+    max-width: 328px;
+    background-color: #FFFFFF;
+}
+
+.card1 {
+    width: auto;
+    height: 69px;
+    border-radius: 8px 8px 0 0;
+    padding: 1em;
+}
+
+.card1-content {
+    width: 296px;
+    height: 32px;
+    display: grid;
+    grid-template-columns: 2em 232px 2em ;
+}
+
+.card img {/*config padrao avatar img*/
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.card-avatar {/*bookmark 1 e 2 - tem uma diferenca de altura, ver no figma e refatora dps pra deixar beauty*/
+    grid-column: 1;
+}
+
+.card-text-container {
+    padding-left: 1em;
+    grid-column: 2;
+    grid-row: 1;
+    max-height: 32px;
+    display: grid;
+    grid-auto-columns: 24px;
+    align-items: center;
+}
+
+.card-text-container p {
+    font-size: 12px;
+    color: #A3A3A3;
+    grid-column-end: span 6;
+}
+.card-icon-video, .card-icon-location {
+    /* padding-right: 8px; */
+    color: #A3A3A3; 
+}
+.card-name{
+    font-size: 14px;
+    grid-column-end: span 7;
+}
+
+.card-btn-chat {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #E5E5E5;
+    border: 0;
+}
+.card-icon-chat {
+    color: #4894FF;
+}
+
+.card2 {
+    width: auto;
+    height: 100px;
+    border-radius: 0 0 8px 8px;
+    padding: 9px 1em 1em 1em;
+
+    display: grid;
+    grid-row-gap: 8px;
+    grid-column-gap: 18px;
+}
+
+.card-hour {
+    grid-column: span 2;
+    font-size: 12px;
+    color: #464646;
+}
+
+.btn-video, .btn-audio {
+    width: 139px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: Montserrat;
+}
+
+.btn-video {
+    color: white;
+    background-color: #FFB050;
+    border: 0;
+}
+
+.btn-audio {
+    grid-column: 2;
+    color: #464646;
+    border: #ECECEC 1px solid;
+    background-color: white;
+}
+
+.btn-address {
+    font-size: 14px;
+    color: white;
+    background-color: #4894FF;
+    border-radius: 8px;
+    border: 0;
+    width: 296px;
+    height: 48px;
+    
+}

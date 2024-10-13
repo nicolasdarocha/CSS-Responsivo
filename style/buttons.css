@@ -1,0 +1,30 @@
+.btn-video, .btn-audio {
+    width: 139px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: Montserrat;
+}
+
+.btn-video {
+    color: white;
+    background-color: #FFB050;
+    border: 0;
+}
+
+.btn-audio {
+    grid-column: 2;
+    color: #464646;
+    border: #ECECEC 1px solid;
+    background-color: white;
+}
+
+.btn-address {
+    font-size: 14px;
+    color: white;
+    background-color: #4894FF;
+    border-radius: 8px;
+    border: 0;
+    width: 296px;
+    height: 48px;
+    
+}

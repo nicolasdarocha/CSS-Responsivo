@@ -1,0 +1,26 @@
+header{
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 22px;
+    padding-bottom: 1vh;
+}
+header p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.home-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}

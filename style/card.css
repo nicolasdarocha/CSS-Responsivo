@@ -1,12 +1,13 @@
 main {/*sections dos dias de consulta*/
+    max-width: 1440px;
     display: grid;
-    
 }
 
 section {
-    display: grid;
-    padding: 1em;
-    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-column: 1; */
     /* gap eh entre items
     margin eh margem por fora da borda
     padding eh margem por dentro da borda */
@@ -17,8 +18,7 @@ section {
 }
 
 .card {
-    min-width: 328px;
-    max-width: 360px;
+    width: 328px;
     height: 170px;
     display: flex;
     flex-direction: column;
@@ -26,12 +26,11 @@ section {
 }
 
 .card1,.card2 {
-    max-width: 328px;
+    width: 100%;
     background-color: #FFFFFF;
 }
 
 .card1 {
-    width: auto;
     height: 69px;
     border-radius: 8px 8px 0 0;
     padding: 1em;
@@ -92,7 +91,6 @@ section {
 }
 
 .card2 {
-    width: auto;
     height: 100px;
     border-radius: 0 0 8px 8px;
     padding: 9px 1em 1em 1em;
@@ -108,3 +106,22 @@ section {
     color: #464646;
 }
 
+@media screen and (min-width: 768px) {
+    section {
+        padding: 36px;
+        gap: 40px;
+        /* GAP ta errado e dá errado */
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section {
+        padding: 54px 54px 16px 54px;
+        column-gap: 66px;
+        row-gap: 48px;
+    }
+
+    .card {
+        width: 400px;
+    }
+}

@@ -31,6 +31,7 @@ section {
 }
 
 .card1 {
+    width: 100%;
     height: 69px;
     border-radius: 8px 8px 0 0;
     padding: 1em;
@@ -108,7 +109,7 @@ section {
 
 @media screen and (min-width: 768px) {
     section {
-        padding: 36px;
+        padding: 24px 36px;
         gap: 40px;
         /* GAP ta errado e dá errado */
     }
@@ -120,8 +121,22 @@ section {
         column-gap: 66px;
         row-gap: 48px;
     }
-
+    
     .card {
         width: 400px;
+    }
+    .card1-content {
+        width: 100%;
+        grid-template-columns: 3em auto 2em;
+    }
+    .card img {
+        width: 48px;
+        height: 48px;
+    }
+    .card-name {
+        font-size: 18px;
+    }
+    .card-hour {
+        font-size: 14px;
     }
 }

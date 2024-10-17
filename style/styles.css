@@ -4,12 +4,13 @@
 @import url('./buttons.css');
 @import url('./card.css');
 @import url('./header.css');
-/* @import url('./nav.css'); NAO TEM NADA AINDA(VOLTOU PRA ANTES DE FAZER A NAVBAR)*/
+@import url('./nav.css'); 
 
 
 body{
     font-family: 'Montserrat';
-    background-color: #E5E5E5;
+    /* background: #f7f6fc; */
+    background: rgba(233, 236, 239, 0.5);
     display: flex;
     justify-content: center;
 }

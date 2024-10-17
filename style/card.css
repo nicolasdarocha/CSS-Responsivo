@@ -1,5 +1,5 @@
 main {/*sections dos dias de consulta*/
-    max-width: 1440px;
+    max-width: 360px;
     display: grid;
 }
 
@@ -7,16 +7,20 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1em;
+    padding: 16px;
     /* grid-column: 1; */
     /* gap eh entre items
     margin eh margem por fora da borda
     padding eh margem por dentro da borda */
 }
 
+
 .section-day {
     padding: 0 16px;
 }
 
+/* CARDS */
 .card {
     width: 328px;
     height: 170px;
@@ -27,7 +31,8 @@ section {
 
 .card1,.card2 {
     width: 100%;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
+    backdrop-filter: blur(22px)
 }
 
 .card1 {
@@ -39,8 +44,9 @@ section {
 
 .card1-content {
     width: 296px;
-    height: 32px;
+    height: 100%;
     display: grid;
+    align-items: center;
     grid-template-columns: 2em 232px 2em ;
 }
 
@@ -50,7 +56,7 @@ section {
     border-radius: 50%;
 }
 
-.card-avatar {/*bookmark 1 e 2 - tem uma diferenca de altura, ver no figma e refatora dps pra deixar beauty*/
+.card-avatar {
     grid-column: 1;
 }
 
@@ -58,10 +64,9 @@ section {
     padding-left: 1em;
     grid-column: 2;
     grid-row: 1;
-    max-height: 32px;
     display: grid;
     grid-auto-columns: 24px;
-    align-items: center;
+    align-items: end;
 }
 
 .card-text-container p {
@@ -70,25 +75,11 @@ section {
     grid-column-end: span 6;
 }
 .card-icon-video, .card-icon-location {
-    /* padding-right: 8px; */
     color: #A3A3A3; 
 }
 .card-name{
     font-size: 14px;
     grid-column-end: span 7;
-}
-
-.card-btn-chat {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    grid-column: 3;
-    grid-row: 1;
-    background-color: #E5E5E5;
-    border: 0;
-}
-.card-icon-chat {
-    color: #4894FF;
 }
 
 .card2 {
@@ -108,22 +99,30 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        max-width: 768px;
+    }/*pra centralizar o conteudo*/
     section {
         padding: 24px 36px;
         gap: 40px;
-        /* GAP ta errado e dá errado */
     }
 }
 
 @media screen and (min-width: 1440px) {
+    main {
+        max-width: 1440px;
+    }
     section {
-        padding: 54px 54px 16px 54px;
+        padding: 32px 54px 16px;
         column-gap: 66px;
         row-gap: 48px;
     }
     
     .card {
         width: 400px;
+    }
+    .card1 {
+        padding: 13px 16px 8px;
     }
     .card1-content {
         width: 100%;

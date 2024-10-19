@@ -1,12 +1,8 @@
 # TODO
 
-1. separar o código(FEITO)
-2. tornar responsivo(IN PROGRESS)
-3. lembrete- home medidas responsivas(FEITO)
-4. tornar o conteudo-card responsivo(FEITO)
-5. fazer a navbar(IN PROGRESS)
-6. implementar a centralização da page em tablets tambem
-7. *conferir a pagina em res de cll e tablet antes de partir pra navbar
+1. tornar responsivo(IN PROGRESS)
+2. implementar a navbar lateralmente no desktop(IN PROGRESS)
+3. ajustar a resoluções 1440+ (o menu lateral n fica colado na lateral)
 
 ## REGISTRO
 
@@ -24,6 +20,12 @@
 - agora na res desktop o conteudo fica centralizado
 - tags iniciais da navbar já foram criadas
 
+- 17/10 - navbar feita
+- float button feito
+- res entre 768-1440px agora tem o conteudo centralizado tambem
+
+- 18/10(19/10) - navbar lateral para desktop(alpha)
+
 ### PENSANDO
 
 - PENSANDO em mexer com media querie e a responsividade dos cards ANTES de
@@ -37,6 +39,9 @@ teste pra tentar resolver o problema de flow em linha(grid-flow n quebra-linha)
 - pelo visto o problema do gap qnd quebra linha sumiu, se aparecer no 360px
 eu jogo o gap pra 768 e deixo o default sem(ou algo assim)
 - apagar os TODO q ja foram feitos ja q to anotando no registro
+18/10-19/10
+- arrumar um jeito de colar a barra na lateral sem descentralizar o container
+- *IDEIA: position relative e right calculado pra colar na lateral
 
 1. HOME(2-3)
 avatar img 57 - 96

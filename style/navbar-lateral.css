@@ -1,20 +1,28 @@
+body {
+    justify-content: normal;
+}
+
+.container {
+    margin-left: 250px;
+}
+
 .navbar {
-    width: 300px;
+    width: 250px;
     height: 100vh;
-    position: static;
+    position: fixed;
+    left: 0;
     border-radius: 0;
     display: block;
 }
 
 .navbar-content {
-    width: 268px;
+    width: 250px;
     padding: 32px 16px;
     flex-direction: column;
     row-gap: 16px;
 }
 
 .nav {
-    width: 100%;
     display: flex;
     align-items: center;
 }

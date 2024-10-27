@@ -1,8 +1,7 @@
 # TODO
 
-1. tornar responsivo(IN PROGRESS)
-2. implementar a navbar lateralmente no desktop(IN PROGRESS)
-3. ajustar a resoluções 1440+ (o menu lateral n fica colado na lateral)
+1. ajustar a resoluções 1440+ (o menu lateral n fica colado na lateral)
+2. testar em outras resoluções (480-1024-1366) e rever as res das media queries
 
 ## REGISTRO
 
@@ -26,6 +25,8 @@
 
 - 18/10(19/10) - navbar lateral para desktop(alpha)
 
+- 27/10 - elementos do botão de cadastro adicionados, estilizados e responsivos
+
 ### PENSANDO
 
 - PENSANDO em mexer com media querie e a responsividade dos cards ANTES de
@@ -42,20 +43,5 @@ eu jogo o gap pra 768 e deixo o default sem(ou algo assim)
 18/10-19/10
 - arrumar um jeito de colar a barra na lateral sem descentralizar o container
 - *IDEIA: position relative e right calculado pra colar na lateral
-
-1. HOME(2-3)
-avatar img 57 - 96
-name font 22 - 31
-consultas font 14 - 18
-
-2. CARDS(2-3)
-avatar 32 - 48
-tamanho 328x170 - 400x17
-btn endereço 296x48 - 368x48
-btn video/audio 139x48 - 172x48
-texto nome 14 - 18
-texto horario 12 - 14
-texto btn 14-16
-
-3. ESPAÇAMENTOS
-(tem q ver isso ai, posso usar gap e justify no geral se pá)
+23/10
+- nav lateral tem q ser fixada de alguma forma

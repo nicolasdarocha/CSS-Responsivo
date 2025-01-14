@@ -27,6 +27,10 @@
 
 - 27/10 - elementos do botão de cadastro adicionados, estilizados e responsivos
 
+- 13/10 - IM BACK
+- float 1 ja certinho
+- comecando a criar os forms de create-card
+
 ### PENSANDO
 
 - PENSANDO em mexer com media querie e a responsividade dos cards ANTES de
@@ -45,3 +49,10 @@ eu jogo o gap pra 768 e deixo o default sem(ou algo assim)
 - *IDEIA: position relative e right calculado pra colar na lateral
 23/10
 - nav lateral tem q ser fixada de alguma forma
+
+#### IDEIAS FUTURAS
+
+- com os btn de criar card, criar form para criar o card
+- |=>(no js do form, procurar pela futura lista de contatos a foto de perfil do cliente)
+- atualizar os day title de acordo com a data atual(sla como fazer isso)
+- criar pagina de login com banco de dados

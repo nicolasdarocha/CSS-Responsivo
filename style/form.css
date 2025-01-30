@@ -1,0 +1,80 @@
+form {
+    z-index: 999;
+    position: fixed;
+    left: 50%;
+    width: 268px;
+    height: 260px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 1em;
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* S T A N D A R T */
+.form-group input,select {
+    background-color: white;
+    border: 1px solid #ECECEC;
+    padding: 1em;
+    border-radius: 0.5em;
+    color: #CFCFCF;
+}
+.form-group input::placeholder , select::placeholder {
+    color: #CFCFCF;
+}
+
+/* H O V E R */
+.form-group input:hover , select:hover {
+    border-color: #CFCFCF;
+    color: #ADADAD;
+}
+.form-group input:hover::placeholder , select:hover::placeholder {
+    color: #ADADAD;
+}
+
+/* F O C U S */
+.form-group input:focus-visible, select:focus-visible, .form-group input:focus, select:focus {
+    border-color: #4894FF;
+}
+.form-group input:focus::placeholder , select:focus::placeholder {
+    opacity: 0;
+}
+
+
+/* 
+    pensando em fazer um input select pros horarios de 10 em 10 min
+    dentro do horario de trabalho
+    agora, como fazer isso? JS? sla, pensa ai
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submit {
+    width: 25%;
+    height: 25px;
+    position: relative;
+    left: 75%;
+}

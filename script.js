@@ -1,10 +1,20 @@
-let clicked = false;
+let btn1_Clicked,btn2_Clicked, btn3_Clicked = false;
 function float() {
-    if (clicked == false) {
+    if (btn1_Clicked == false) {
         document.getElementById("newAction").style.display = "inline";
-        clicked = true;
+        btn1_Clicked = true;
     } else {
         document.getElementById("newAction").style.display = "none";
-        clicked = false;
+        btn1_Clicked = false;
+    }
+}
+
+function CardLocal() {
+    if (btn3_Clicked == false) {
+        document.getElementById("formLocal").style.display = "flex";
+        btn3_Clicked = true;
+    } else {
+        document.getElementById("formLocal").style.display = "none";
+        btn3_Clicked = false;
     }
 }

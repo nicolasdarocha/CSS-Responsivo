@@ -1,9 +1,11 @@
 form {
     z-index: 999;
-    position: fixed;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    width: 268px;
-    height: 260px;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 340px;
     background-color: whitesmoke;
     border-radius: 8px;
     padding: 1em;
@@ -19,6 +21,7 @@ form {
 
 /* S T A N D A R T */
 .form-group input,select {
+    height: 56px;
     background-color: white;
     border: 1px solid #ECECEC;
     padding: 1em;
@@ -39,42 +42,38 @@ form {
 }
 
 /* F O C U S */
-.form-group input:focus-visible, select:focus-visible, .form-group input:focus, select:focus {
+.form-group input:focus-visible, select:focus-visible,
+.form-group input:focus, select:focus { 
+    /*tem 2 tipos de focus pq no inspect tava me dando agonia kk*/
     border-color: #4894FF;
 }
-.form-group input:focus::placeholder , select:focus::placeholder {
+.form-group input:focus::placeholder,
+.form-group select:focus::placeholder {
     opacity: 0;
 }
 
-
-/* 
-    pensando em fazer um input select pros horarios de 10 em 10 min
-    dentro do horario de trabalho
-    agora, como fazer isso? JS? sla, pensa ai
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .submit {
-    width: 25%;
-    height: 25px;
+    width: 30%;
+    height: 56px;
     position: relative;
-    left: 75%;
+    left: 70%;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #4894FF;
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.submit:hover{
+    background-color: #4786F0;
+}
+.submit:active {
+    background-color: #4373DC;
+    border: 2px solid #57A4FF;
+}
+.submit:focus {
+    background-color: #4062C9;
+    border: 2px solid #4894FF;
 }

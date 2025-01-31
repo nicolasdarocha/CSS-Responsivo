@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <script src="script.js"></script>
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" media="screen and (min-width: 1440px)" href="style/navbar-lateral.css">
     <title>Responsivo</title>
@@ -326,7 +325,7 @@
     </nav>
     <!--  -->
     <div class="newAction" id="newAction">
-        <div class="bgd" onclick="float()"></div>
+        <div class="bgd" onclick="escape()"></div>
         <div class="btn-float-content">
             <div class="float 2">
                 <p>New appoint by video</p>
@@ -350,27 +349,27 @@
                 </button>
             </div>
         </div>
+        <form onsubmit="criarCardLocal()" id="formLocal">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Name" name="name" id="name">
+            </div>
+    
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Time</label>
+                <select name="time" id="time">
+                    
+                </select>
+            </div>
+            <button type="submit" class="submit">Criar</button>
+        </form>
     </div>
     <!--  -->
-    <form onsubmit="criarCardLocal()" id="formLocal">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Name" name="name" id="name">
-        </div>
-
-        <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date">
-        </div>
-        
-        <div class="form-group">
-            <label for="time">Time</label>
-            <select name="time">
-                
-            </select>
-        </div>
-        <button type="submit" class="submit">Criar</button>
-    </form>
     <!--  -->
     <button type="button" onClick="float()" class="btn-float">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -379,6 +378,7 @@
         </svg>
     </button>
     <!--  -->
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

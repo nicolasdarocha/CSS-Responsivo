@@ -65,6 +65,9 @@ button, input {
 /* * BTN FLOAT NEW's CONTENT */
 .newAction {
     display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 .bgd {

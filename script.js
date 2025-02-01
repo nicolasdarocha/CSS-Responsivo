@@ -54,10 +54,6 @@ class hem {
     }
 }
 
-// const hem = (hora, minuto) => {
-//     return {hora: hora, minuto: minuto}
-// }
-
 let horarios = [];
 for (let h = 14; h <= 19; h++) {
     // console.log(h);
@@ -93,6 +89,6 @@ for (let h = 14; h <= 19; h++) {
 let tam = horarios.length;
 for (let i = 0; i < tam; i++) {
     let horario = horarios[i].horario();
-    console.log(horario);
+    // console.log(horario);
     document.getElementById("time").innerHTML += `<option value = "${horario}">${horario}</option>`
 }

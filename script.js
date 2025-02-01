@@ -9,6 +9,16 @@ function float() {
     }
 }
 
+function cardOnline() {
+    if (btn2_Clicked == false) {
+        document.getElementById("formOnline").style.display = "flex";
+        btn2_Clicked = true;
+    } else {
+        document.getElementById("formOnline").style.display = "none";
+        btn2_Clicked = false;
+    }
+}
+
 function cardLocal() {
     if (btn3_Clicked == false) {
         document.getElementById("formLocal").style.display = "flex";

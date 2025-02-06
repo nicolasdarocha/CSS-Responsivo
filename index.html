@@ -353,7 +353,11 @@
         <form onsubmit="criarCardLocal()" id="formLocal">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" placeholder="Name" name="name" id="name">
+                <input type="text" placeholder="Name" list="listClients" name="name" id="name">
+                <datalist id="listClients">
+                    <!-- <option value="x">x</option> -->
+                </datalist>
+
             </div>
     
             <div class="form-group">
@@ -373,7 +377,10 @@
         <form onsubmit="criarCardOnline()" id="formOnline">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" placeholder="Name" name="name" id="name">
+                <input type="text" placeholder="Name" list="listClients" name="name" id="name">
+                <datalist id="listClients">
+                    <!-- <option value="x">x</option> -->
+                </datalist>
             </div>
     
             <div class="form-group">

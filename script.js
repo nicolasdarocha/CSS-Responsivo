@@ -92,3 +92,16 @@ for (let i = 0; i < tam; i++) {
     // console.log(horario);
     document.getElementById("time").innerHTML += `<option value = "${horario}">${horario}</option>`
 }
+
+// listClients
+listClients = [
+    'Luciana Dias',
+    'Larissa Santana',
+    'Marcos Correia', 
+    'Clara Lemos'
+]
+let list = document.getElementById('listClients');
+for (let i = 0; i < listClients.length; i++) {
+    let nome = listClients[i];
+    list.innerHTML += `<option value = "${nome}">${nome}</option>`
+}

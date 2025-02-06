@@ -56,3 +56,6 @@ eu jogo o gap pra 768 e deixo o default sem(ou algo assim)
 - |=>(no js do form, procurar pela futura lista de contatos a foto de perfil do cliente)
 - atualizar os day title de acordo com a data atual(sla como fazer isso)
 - criar pagina de login com banco de dados
+- trocar botoes de call by video/audio por create session e jogar pra...
+- uma abinha de selecao entre plataformas de reuniao online e jogar pra page...
+- de criacao de nova reuniao

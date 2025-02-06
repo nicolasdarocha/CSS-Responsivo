@@ -8,7 +8,6 @@
     <title>Responsivo</title>
 </head>
 <body>
-    
     <div class="container">
         <header>
             <img class="home-avatar" src="img/perfil-1.jpg" alt="">
@@ -20,7 +19,7 @@
         <!--  --> 
         <main>
             <h3 class="section-day">Today</h3>
-            <section>
+            <section class="section-cards">
                 <div class="card"> <!--ONLINE-CARD-->
                     <div class="card1">
                         <div class="card1-content">
@@ -88,7 +87,7 @@
                 </div>
             </section>
             <h3 class="section-day">Tomorrow</h3>
-            <section>
+            <section class="section-cards">
                 <div class="card"> <!--LOCAL-CARD-->
                     <div class="card1">
                         <div class="card1-content">
@@ -178,7 +177,7 @@
                 </div>
             </section>
             <h3 class="section-day">Wednesday</h3>
-            <section>
+            <section class="section-cards">
                 <div class="card"> <!--LOCAL-CARD-->
                     <div class="card1">
                         <div class="card1-content">
@@ -350,7 +349,7 @@
             </div>
         </div>
         <!--  -->
-        <form onsubmit="criarCardLocal()" id="formLocal">
+        <form onsubmit="createCardLocal()" id="formLocal">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" placeholder="Name" list="listClients" name="name" id="name">
@@ -367,14 +366,14 @@
             
             <div class="form-group">
                 <label for="time">Time</label>
-                <select name="time" id="time">
+                <select name="time" name="time">
                     
                 </select>
             </div>
             <button type="submit" class="submit">Criar</button>
         </form>
         <!--  -->
-        <form onsubmit="criarCardOnline()" id="formOnline">
+        <form onsubmit="createCardOnline()" id="formOnline">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" placeholder="Name" list="listClients" name="name" id="name">
@@ -390,7 +389,7 @@
             
             <div class="form-group">
                 <label for="time">Time</label>
-                <select name="time" id="time">
+                <select name="time" name="time2">
                     
                 </select>
             </div>

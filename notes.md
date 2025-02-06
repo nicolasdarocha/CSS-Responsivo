@@ -33,6 +33,8 @@
 
 ### PENSANDO
 
+- margin: 1em 0; border-radius: 1em; background-color: rgba(253, 254, 255, 1);
+
 - PENSANDO em mexer com media querie e a responsividade dos cards ANTES de
 comecar a criar a navbar
 - DEVO anotar oq muda no figma e setar os valores q variam nos respectivos
@@ -56,6 +58,12 @@ eu jogo o gap pra 768 e deixo o default sem(ou algo assim)
 - |=>(no js do form, procurar pela futura lista de contatos a foto de perfil do cliente)
 - atualizar os day title de acordo com a data atual(sla como fazer isso)
 - criar pagina de login com banco de dados
+
 - trocar botoes de call by video/audio por create session e jogar pra...
 - uma abinha de selecao entre plataformas de reuniao online e jogar pra page...
 - de criacao de nova reuniao
+
+- usar um unico form so q escondendo os inputs dependendo do tipo de card.
+- quer criar card Local, esconde os inputs de Online, e vice-versa.
+
+- usar o projeto de chat do connection no projeto(loucura?)

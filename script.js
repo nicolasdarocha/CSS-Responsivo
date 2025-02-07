@@ -48,9 +48,13 @@ function escape() {
     }
 }
 
-const section = document.getElementsByClassName("section-cards");
-function createCardOnline()
+const section = document.getElementById("section-cards1");
+function createCardOnline(event)
 {
+    event.preventDefault();
+    const dadosDoForm = new FormData(event.target);
+    const nome = dadosDoForm.get('name');
+    const horarioMarcado = dadosDoForm.get('time');
     section.innerHTML += `
     <div class="card"> <!--ONLINE-CARD-->
         <div class="card1">
@@ -69,7 +73,7 @@ function createCardOnline()
             </div>
         </div>
         <div class="card2">
-            <p class="card-hour">${horario-marcado}(${tempo-de-consulta})</p>
+            <p class="card-hour">${horarioMarcado}(tempo de consulta)</p>
             <input class="btn-video" type="button" value="Call by video">
             <input class="btn-audio" type="button" value="Call by audio">
         </div>
@@ -101,7 +105,7 @@ function createCardLocal(event)
             </div>
         </div>
         <div class="card2">
-            <p class="card-hour">${horarioarcado}(${tempo-de-consulta})</p>
+            <p class="card-hour">${horarioMarcado}(tempo de consulta)</p>
             <input class="btn-address" type="button" value="See address">
         </div>
     </div>
@@ -155,9 +159,9 @@ let tam = horarios.length;
 for (let i = 0; i < tam; i++) {
     let horario = horarios[i].horario();
     // console.log(horario);
-    document.getElementsByName("time").innerHTML += `<option value = "${horario}">${horario}</option>`
+    document.getElementById("time-local").innerHTML += `<option value = "${horario}">${horario}</option>`;
+    document.getElementById("time-online").innerHTML += `<option value = "${horario}">${horario}</option>`;
 }
-document.getElementsByName("time2").innerHTML = document.getElementsByName("time").innerHTML;
 
 // listClients
 listClients = [

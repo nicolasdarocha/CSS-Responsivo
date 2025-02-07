@@ -19,7 +19,7 @@
         <!--  --> 
         <main>
             <h3 class="section-day">Today</h3>
-            <section class="section-cards">
+            <section id="section-cards1" class="section-cards">
                 <div class="card"> <!--ONLINE-CARD-->
                     <div class="card1">
                         <div class="card1-content">
@@ -87,7 +87,7 @@
                 </div>
             </section>
             <h3 class="section-day">Tomorrow</h3>
-            <section class="section-cards">
+            <section id="section-cards2" class="section-cards">
                 <div class="card"> <!--LOCAL-CARD-->
                     <div class="card1">
                         <div class="card1-content">
@@ -177,7 +177,7 @@
                 </div>
             </section>
             <h3 class="section-day">Wednesday</h3>
-            <section class="section-cards">
+            <section id="section-cards3" class="section-cards">
                 <div class="card"> <!--LOCAL-CARD-->
                     <div class="card1">
                         <div class="card1-content">
@@ -349,7 +349,7 @@
             </div>
         </div>
         <!--  -->
-        <form onsubmit="createCardLocal()" id="formLocal">
+        <form onsubmit="createCardLocal(event)" id="formLocal">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" placeholder="Name" list="listClients" name="name" id="name">
@@ -365,12 +365,12 @@
             </div>
             
             <div class="form-group">
-                <label for="time">Time</label>
-                <select name="time" name="time">
+                <label for="time-local">Time</label>
+                <select id="time-local" name="time">
                     
                 </select>
             </div>
-            <button type="submit" class="submit">Criar</button>
+            <button class="submit">Criar</button>
         </form>
         <!--  -->
         <form onsubmit="createCardOnline()" id="formOnline">
@@ -388,8 +388,8 @@
             </div>
             
             <div class="form-group">
-                <label for="time">Time</label>
-                <select name="time" name="time2">
+                <label for="time-online">Time</label>
+                <select id="time-online" name="time">
                     
                 </select>
             </div>

@@ -48,13 +48,93 @@ function escape() {
     }
 }
 
+//function random colored avatar icon
+
+//alterar a duracao nos innerHTML
+
+//ligar os cards a data
+//criar uma funcao pra buscar os cards dos dias:
+//identificar o dia atual e procurar cards desse dia e assim vai
+//FAZ DEBAIXO PRA CIMA DESSA LISTA
+
+
+
+
+
+
+let horarios = [];
+for (let h = 13; h <= 17; h++) {
+    // console.log(h);
+    if (h < 17) {
+                hora = h +':00';
+
+                hora = hora.split(":");
+                let classHora = new hem(hora[0],hora[1]);
+                horarios.push(classHora);
+
+                hora = h +':30';
+
+                hora = hora.split(":");
+                classHora = new hem(hora[0],hora[1]);
+                horarios.push(classHora);
+
+    } else {
+        let hora = h + ':00';//ultima hr
+
+        hora = hora.split(":");
+        let classHora = new hem(hora[0],hora[1]);
+        horarios.push(classHora);
+    }
+}
+
+let tam = horarios.length;
+for (let i = 0; i < tam; i++) {
+    let horario = horarios[i].horario();
+    // console.log(horario);
+    document.getElementById("time-local").innerHTML += `<option value = "${horario}">${horario}</option>`;
+    document.getElementById("time-online").innerHTML += `<option value = "${horario}">${horario}</option>`;
+}
+
+
+
+class client {
+    constructor(nome, data, hora, tipo) {
+        this.nome = nome;
+        this.data = data;
+        this.horaInicio = hora;
+        this.horaFim = horarios[horarios.indexOf(hora) + 1];//hora + 1
+        this.tipo = tipo;
+        horarios.splice(horarios.indexOf(hora), horarios.indexOf(hora) + 1);
+
+    }
+    duracao() {
+        return "(1 hora)"
+    }
+}
+
+// listClients
+listClients = [
+    'Luciana Dias',
+    'Larissa Santana',
+    'Marcos Correia', 
+    'Clara Lemos'
+
+]
+// let list = document.getElementById('listClients');
+// for (let i = 0; i < listClients.length; i++) {
+    // let nome = listClients[i];
+    // list.innerHTML += `<option value = "${nome}">${nome}</option>`
+// }
+
 const section = document.getElementById("section-cards1");
 function createCardOnline(event)
 {
     event.preventDefault();
     const dadosDoForm = new FormData(event.target);
+
     const nome = dadosDoForm.get('name');
     const horarioMarcado = dadosDoForm.get('time');
+    listClients.push(new client(nome, horarioMarcado, "Online"));
     section.innerHTML += `
     <div class="card"> <!--ONLINE-CARD-->
         <div class="card1">
@@ -85,8 +165,10 @@ function createCardLocal(event)
 {
     event.preventDefault();
     const dadosDoForm = new FormData(event.target);
+
     const nome = dadosDoForm.get('name');
     const horarioMarcado = dadosDoForm.get('time');
+    listClients.push(new client(nome, horarioMarcado, "Local"));
     section.innerHTML += `
         <div class="card"> <!--LOCAL-CARD-->
         <div class="card1">
@@ -123,55 +205,5 @@ class hem {
     }
 }
 
-let horarios = [];
-for (let h = 14; h <= 19; h++) {
-    // console.log(h);
-    if (h < 19) {
-        for (let j = 0; j < 6; j++) {
-            let m = j * 10;
-            let hora = h + ':' + m;
 
-            if (m == 0) {
-                // console.log(h,': 00');
-                hora = h +':00';
 
-                hora = hora.split(":");
-                let classHora = new hem(hora[0],hora[1]);
-                horarios.push(classHora);
-            } else {
-                // console.log(h,':',m);
-
-                hora = hora.split(":");
-                let classHora = new hem(hora[0],hora[1]);
-                horarios.push(classHora);
-            }
-        }
-    } else {
-        let hora = h + ':00';
-
-        hora = hora.split(":");
-        let classHora = new hem(hora[0],hora[1]);
-        horarios.push(classHora);
-    }
-}
-
-let tam = horarios.length;
-for (let i = 0; i < tam; i++) {
-    let horario = horarios[i].horario();
-    // console.log(horario);
-    document.getElementById("time-local").innerHTML += `<option value = "${horario}">${horario}</option>`;
-    document.getElementById("time-online").innerHTML += `<option value = "${horario}">${horario}</option>`;
-}
-
-// listClients
-listClients = [
-    'Luciana Dias',
-    'Larissa Santana',
-    'Marcos Correia', 
-    'Clara Lemos'
-]
-let list = document.getElementById('listClients');
-for (let i = 0; i < listClients.length; i++) {
-    let nome = listClients[i];
-    list.innerHTML += `<option value = "${nome}">${nome}</option>`
-}
